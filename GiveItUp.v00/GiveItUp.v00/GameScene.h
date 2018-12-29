@@ -1,13 +1,13 @@
 #pragma once
 #include "Scene.h"
-class GameScene: public Scene
+class GameScene:public Scene
 {
 public:
 	GameScene();
 	~GameScene();
-	void Init();
-	void Update(float dt) ;
-	void Render(RenderWindow &window);
+	void Init()override;
+	void Update(float dt) override;
+	void Render(RenderWindow &window)override;
 private:
 	int m_isScore;
 

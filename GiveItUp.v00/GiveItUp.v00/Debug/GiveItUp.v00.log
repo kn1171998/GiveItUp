@@ -1,17 +1,15 @@
-﻿  stdafx.cpp
-  SceneManager.cpp
+﻿  SceneManager.cpp
   Scene.cpp
-  mc.cpp
   GiveItUp.v00.cpp
+c:\users\mr_tai\giveitup\giveitup.v00\giveitup.v00\giveitup.v00.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Compiling...
   GameScene.cpp
   GameObjectRender.cpp
 c:\users\mr_tai\giveitup\giveitup.v00\giveitup.v00\gameobjectrender.cpp(7): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   GameObject.cpp
   GameManagerState.cpp
   Generating Code...
-GameScene.obj : error LNK2019: unresolved external symbol "public: __thiscall Scene::Scene(void)" (??0Scene@@QAE@XZ) referenced in function "public: __thiscall GameScene::GameScene(void)" (??0GameScene@@QAE@XZ)
-GameScene.obj : error LNK2019: unresolved external symbol "public: __thiscall Scene::~Scene(void)" (??1Scene@@QAE@XZ) referenced in function "public: __thiscall GameScene::~GameScene(void)" (??1GameScene@@QAE@XZ)
-GameScene.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall GameScene::Init(void)" (?Init@GameScene@@UAEXXZ)
-GameScene.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall GameScene::Update(float)" (?Update@GameScene@@UAEXM@Z)
-GameScene.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall GameScene::Render(class sf::RenderWindow &)" (?Render@GameScene@@UAEXAAVRenderWindow@sf@@@Z)
-C:\Users\Mr_Tai\GiveItUp\GiveItUp.v00\Debug\GiveItUp.v00.exe : fatal error LNK1120: 5 unresolved externals
+  LINK : C:\Users\Mr_Tai\GiveItUp\GiveItUp.v00\Debug\GiveItUp.v00.exe not found or not built by the last incremental link; performing full link
+  GiveItUp.v00.vcxproj -> C:\Users\Mr_Tai\GiveItUp\GiveItUp.v00\Debug\GiveItUp.v00.exe
+  GiveItUp.v00.vcxproj -> C:\Users\Mr_Tai\GiveItUp\GiveItUp.v00\Debug\GiveItUp.v00.pdb (Full PDB)

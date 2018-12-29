@@ -2,6 +2,7 @@
 #include "SceneManager.h"
 
 SceneManager* SceneManager::m_pInstance = NULL;
+State st = GameManagerState::getInstance()->getState();
 SceneManager* SceneManager::GetInstance() {
 	if (m_pInstance == NULL)
 		m_pInstance = new SceneManager();
@@ -21,3 +22,15 @@ SceneManager::~SceneManager()
 Scene* SceneManager::GetCurrentScene() {
 	return m_sCurrentScene;
 }
+void SceneManager::Init() {
+	//shape.setFillColor(sf::Color::Red);
+	m_sCurrentScene = new GameScene();
+	m_sCurrentScene->Init();
+}
+void SceneManager::Render(sf::RenderWindow &window) {
+	m_sCurrentScene->Render(window);
+}
+void SceneManager::Update(float deltime) {
+	m_sCurrentScene->Update(deltime);
+}
+

@@ -8,7 +8,7 @@ public:
 	virtual void Update(float deltime);
 	virtual void Render(sf::RenderWindow &window);
 	virtual void Init();
-private:
+protected:
 	char* bacgroundPath;
 	sf::Texture m_textureBackground;
 	sf::Sprite m_spriteBackground;
